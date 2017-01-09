@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First Post on Github Blog"
+title:  "2017. 01. 09 Eror Issue"
 date:   2017-01-09 17:40:48 +0900
 categories: Toast Rookie 4th Study
 ---
