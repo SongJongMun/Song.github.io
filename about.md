@@ -22,7 +22,7 @@ title: About
 
 >###Toast Rookie 4th###
 
->###Rookie-Sprout TF. ###
+>###Rookie-Moon TF. ###
 
 >###JongMun, Song###
 
@@ -32,7 +32,6 @@ title: About
 ---
 
 >* [FaceBook](https://www.facebook.com/powerioge)
->
 >* [Github](https://github.com/SongJongMun)
 >* [Mail](mailto:skuugioge@gmail.com)
 
