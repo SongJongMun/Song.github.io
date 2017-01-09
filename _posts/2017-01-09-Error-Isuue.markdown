@@ -10,7 +10,7 @@ categories: Toast Rookie 4th Study
 Today Error Issue
 
 1. STS, Oracle MySQL, JDK 설치 후 STS 실행 시 Exit Code = 13, 1 발생
-2. Maven Install, Update 시 Spring Webmvc Jar 파일과 Mysql-connector 관련 jar 파일에서 Invaild END header 발생 
+2. Maven Install, Update 시 Spring Webmvc jar 파일과 Mysql-connector 관련 jar 파일에서 Invaild END header 발생 
 3. Github blog Upload시 작성한 포스트와 수정내용이 적용되지 않음
 
 Error 해결 방법
