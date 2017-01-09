@@ -26,10 +26,10 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
-  
-	<div class="fb-like"  data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-	<div class="fb-comments" data-width="400px" data-numposts="5"></div>
-  {{ page.date | date_to_string }}
+	<div class="facebook">
+		<div class="fb-like"  data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+		<div class="fb-comments" data-width="400px" data-numposts="5"></div>
+	</div>
 </div>
 
 <div class="related">

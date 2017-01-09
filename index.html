@@ -3,6 +3,27 @@ layout: page
 title: Post
 ---
 
+<script>
+  (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.8&appId=1253938667992778";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.8&appId=1253938667992778";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -15,6 +36,12 @@ title: Post
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content }}
+	
+	<div class="facebook">
+		<div class="fb-like"  data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+		<div class="fb-comments" data-width="400px" data-numposts="5"></div>
+	</div>
+	
   </div>
   {% endfor %}
 </div>
