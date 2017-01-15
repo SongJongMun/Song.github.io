@@ -2,6 +2,9 @@
 - name: Blog
   href: '/blog/'
 
+- name : Study
+  href: '/study/'
+  
 - name: Spring
   href: '/spring/'
 
