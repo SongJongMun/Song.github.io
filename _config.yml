@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Jalpc"
+title: "SongSong"
 description: "Song's blog,use Jekyll and github pages."
 keywords: "SJM,blog,Jekyll,github,gh-pages"
 baseurl: "/"
@@ -16,7 +16,7 @@ author:
   email: 'skuugioge@daum.net'
   facebook_username: 'powerioge'
   github_username: 'SongJongMun'
-  avatar: 'static/img/landing/profile.jpg'
+  avatar: 'static/img/landing/profile.JPG'
   desc: 'NHN Entertainment. Rookie-Luna TF'
 
 # comment
