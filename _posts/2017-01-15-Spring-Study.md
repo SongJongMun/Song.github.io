@@ -202,9 +202,13 @@ XML에 담긴 DI정보를 활용하여 의존관계 설정
 #의존 오브젝트와의 관계 정리
 
 `<property>` 를 이용해 의존 오브젝트와의 관계를 정의한다.
+
 `<property>` Attribute
+
 name : property의 이름, 메소드명 setName에 매칭됨
+
 ref : property의 값, 주입해줄 오브젝트의 Bean 이름, XML내부 bean-id에 매칭 됨
+
 value : 수정자 메소드를 통해 다른 빈이나 오브젝트가 아닌 단순 값(String, Class 타입 오브젝트)을 넣고 싶을 때.
 
 
