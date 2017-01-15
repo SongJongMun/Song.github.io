@@ -1,102 +1,54 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-#permalink:           pretty
-permalink: /blog/:year/:month/:day/:title/
-relative_permalinks: false
+# Welcome to Jekyll!
 
-# Setup
-title:               foo
-#tagline:             'foo's website
-description:         Foo's blog...
-url: https://dyndna.github.io/lanyon-plus
-baseurl: "/lanyon-plus"
-urlimg: https://dyndna.github.io/lanyon-plus/images/
-markdown: kramdown
-paginate: 5
-paginate_path: "/blog/page:num"
-excerpt_separator: <!--more-->
-default_bg: sitelogo.png 
-safe: false
-#timezone:    America/Chicago
-future:      true
+# Website settings
+title: "Jalpc"
+description: "Jack's blog,use Jekyll and github pages."
+keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
+baseurl: "/"
+url: "http://www.jack003.com"
+# url: "http://127.0.0.1:4000"
 
-gems:
-  - jekyll-paginate
-  - jemoji
-  - font-awesome-sass
-  - kramdown
-  - rouge
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
-
-# About/contact
+# author
 author:
-  name:              Foo Boo
-  url:               https://twitter.com/abcd
-  avatar:         foo.png
-  #email:           
+  name: 'Jack'
+  first_name: 'Jia'
+  last_name: 'Kun'
+  email: 'me@jack003.com'
+  facebook_username: 'jiakunnj'
+  github_username: 'JiaKunUp'
+  avatar: 'static/img/landing/Jack.jpg'
+  desc: 'I am a Full Stack engineer with website development, automation Ops and writing scripts experience. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I can make lots of friends when I coding and travel.'
 
-# Owner/author information
-owner:
-  name:           Foo Boo
-  avatar:         foo.png
-  #email:          
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        abcd
-  facebook:       
-  github:         xyz123abc
-  stackexchange:  
-  linkedin:       https://www.linkedin.com/in/foo
-  instagram:      
-  flickr:
-  tumblr:  
-  google_plus:    https://plus.google.com/+foo
-  # orcid and google scholar IDs are different than standard username.
-  orcid: xyz123abc
-  gscholar: xyz123abc
+# comment
+changyan:
+  # appid: cysfY7ULn
+  # conf: prod_861928934cecb7a18e15bedaed9dae29
+disqus:
+  name: jalpc
+  public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
 
-## sidebar links:
-# For external links add external: true
-links:
-  - title: <i class="iconside iconm-home"></i> Home
-    url: /
-  - title: <i class="iconside iconm-user"></i> About
-    url: /about/
-  - title: <i class="iconside iconm-quill"></i> Blog
-    url: /blog/
-  - title: <i class="fa fa-tags"></i> Tags
-    url: /tags/
-  - title: <i class="fa fa-archive"></i> Archive
-    url: /archive/
-  - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
-    external: true
-  - title: <i class="iconside iconm-envelop"></i> Contact
-    url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
-    external: true
-  - title: <i class="iconside iconm-feed2"></i> Feed
-    url: /feed.xml
+# share
+bshare:
+  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
 
-# Google Custom Search:
-#google_search: xyz123abc
+# baidu analytics
+ba:
+  # uuid: 317acca9ef9255b934e46371e471431d
 
-# Twitter stream widget:
-# Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets
-#twitter_widget_id: xyz123abc
+# google analytics
+ga:
+  id: UA-73784599-1
 
-# Add disqus username for Disqus comment board:
-disqus_shortname: foo
+# growingIO
+gio:
+  id: a49d4901c7853da9
 
-# Analytics and webmaster tools stuff goes here
-#google_analytics:   xyz123abc
+# Build settings
+encoding: "utf-8"
 
-#### For dummy website only - remove if you wish ####
-github_repo: https://github.com/dyndna/lanyon-plus
-version: 1.1.0
-## END ##
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
