@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2017. 01. 09 스프링 스터디 1장"
+title:  "2017. 01. 15 스프링 스터디 1장"
 desc: "Spring Study #1"
 keywords: "TOBY,Spring,Study"
 date:   2017-01-15
