@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Eclipse - Tsk Tag"
+title:  "Eclipse - Task Tag"
 desc: "Spring, Eclipse,Task,Tag"
 keywords: "eclipse, taskTag"
 date:   2017-02-19
@@ -15,8 +15,12 @@ icon: fa-bookmark-o
 
 # TODO로 Task List 관리하기
 
+---
+
 
 ## TODO가 왜 필요할까
+
+---
 
 1. 오늘은 여기까지 했음. 내일은 이부분 이부분 수정하자
 2. 나중에 무언가가 추가되면 여기를 이렇게 저렇게 바꿔야 할껄?
@@ -28,21 +32,29 @@ icon: fa-bookmark-o
 
 ## TODO 작성하는 방법
 
+---
+
 그냥 모든 주석에 작성할 수 있다. //,  /* ~ */, /\*\* ~ *\/ 등의 주석에서 사용할 수 있다.
 
-![todo0.PNG](/files/1888961859588990577)
+![todo0.PNG](/search/img/todo0.png)
 
 ## 작성한 TODO List 확인하는 방법
 
+---
+
+
 이클립스 상단 바의 window - show View - Others - Tasks 를 클릭하면 작성한 TODO 리스트들을 한번에 확인 가능할 수 있는 별도의 창이 열리게 된다.
 
-![todo1.png](/files/1888962498137723174)
+![todo1.png](/search/img/todo1.png)
 
-![todo2.PNG](/files/1888962579380342314)
+![todo2.PNG](/search/img/todo2.png)
 
 해당 TODO 란을 더블클릭하면 주석문이 위치한 코드로 바로 이동가능하다.
 
 ## TODO 외의 다른 Task Tag는?
+
+---
+
 
 이클립스에서는 기본적으로 "FIXME", "TODO", "XXX" 3가지 Task Tag가 정의되어 있다.
 
@@ -63,24 +75,30 @@ icon: fa-bookmark-o
 ```
 ## 직접 만드는 Task Tag
 
+---
+
+
 Window - Preferences - java - compiler - task tags를 가면 직접 Task Tag를 정의할 수 있고 중요도도 설정 가능하다.
 
-![todo3.PNG](/files/1888966232568919438)
+![todo3.PNG](/search/img/todo3.png)
 
-![todo4.PNG](/files/1888966686785623178)
+![todo4.PNG](/search/img/todo4.png)
 
-![todo5.PNG](/files/1888966747291761830)
+![todo5.PNG](/search/img/todo5.png)
 
 
 ## Task Tag - 단축키로 만드려면
+
+---
+
 
 Window -> Preferences -> Java -> Editor -> Templates -> New 설정 창에서 새로운 템플릿을 만들어줘야 한다.
 
 
 
-![todo6.PNG](/files/1888969429405960544)
+![todo6.PNG](/search/img/todo6.png)
 
-![todo7.PNG](/files/1888970693622172430)
+![todo7.PNG](/search/img/todo7.png)
 
 다음과 같이 템플릿을 만들고 적용할 수 있다.
 
@@ -89,5 +107,5 @@ Window -> Preferences -> Java -> Editor -> Templates -> New 설정 창에서 새
 참고로 해당 설정 창에서 다른 Templete를 만들어 놓으면 유용하게 쓸 수 있다.
 예를 들면 메소드 위에서 /\*\*문을 치고 엔터키만 누르면 자동으로 다음과 같은 주석이 만들어진다.
 
-![todo8.PNG](/files/1888972240756854105)
+![todo8.PNG](/search/img/todo8.png)
 
