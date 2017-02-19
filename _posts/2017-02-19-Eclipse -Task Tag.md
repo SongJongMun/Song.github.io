@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Eclipse - Tsk Tag"
-desc: "Eclipse - Tsk Tag"
+desc: "Spring, Eclipse,Task,Tag"
 keywords: "eclipse, taskTag"
 date:   2017-02-19
-categories: [Spring]
-tags: [spring]
+categories: [Study]
+tags: [study]
 icon: fa-bookmark-o
 ---
 
