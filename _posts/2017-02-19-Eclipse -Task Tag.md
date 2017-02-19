@@ -36,7 +36,7 @@ icon: fa-bookmark-o
 
 그냥 모든 주석에 작성할 수 있다. //,  /* ~ */, /\*\* ~ *\/ 등의 주석에서 사용할 수 있다.
 
-![todo0.png](/search/img/todo0.png)
+![todo0.png](/search/img/1888961859588990577.png)
 
 ## 작성한 TODO List 확인하는 방법
 
@@ -45,9 +45,9 @@ icon: fa-bookmark-o
 
 이클립스 상단 바의 window - show View - Others - Tasks 를 클릭하면 작성한 TODO 리스트들을 한번에 확인 가능할 수 있는 별도의 창이 열리게 된다.
 
-![todo1.png](/search/img/todo1.png)
+![todo1.png](/search/img/1888962498137723174.png)
 
-![todo2.png](/search/img/todo2.png)
+![todo2.png](/search/img/1888962579380342314.png)
 
 해당 TODO 란을 더블클릭하면 주석문이 위치한 코드로 바로 이동가능하다.
 
@@ -80,11 +80,11 @@ icon: fa-bookmark-o
 
 Window - Preferences - java - compiler - task tags를 가면 직접 Task Tag를 정의할 수 있고 중요도도 설정 가능하다.
 
-![todo3.png](/search/img/todo3.png)
+![todo3.png](/search/img/1888966232568919438.png)
 
-![todo4.png](/search/img/todo4.png)
+![todo4.png](/search/img/1888966686785623178.png)
 
-![todo5.png](/search/img/todo5.png)
+![todo5.png](/search/img/1888966747291761830.png)
 
 
 ## Task Tag - 단축키로 만드려면
@@ -96,9 +96,9 @@ Window -> Preferences -> Java -> Editor -> Templates -> New 설정 창에서 새
 
 
 
-![todo6.png](/search/img/todo6.png)
+![todo6.png](/search/img/1888969429405960544.png)
 
-![todo7.png](/search/img/todo7.png)
+![todo7.png](/search/img/1888970693622172430.png)
 
 다음과 같이 템플릿을 만들고 적용할 수 있다.
 
@@ -107,5 +107,5 @@ Window -> Preferences -> Java -> Editor -> Templates -> New 설정 창에서 새
 참고로 해당 설정 창에서 다른 Templete를 만들어 놓으면 유용하게 쓸 수 있다.
 예를 들면 메소드 위에서 /\*\*문을 치고 엔터키만 누르면 자동으로 다음과 같은 주석이 만들어진다.
 
-![todo8.png](/search/img/todo8.png)
+![todo8.png](/search/img/1888972240756854105.png)
 
