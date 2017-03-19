@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "2017. 02. 12 BaseCamp에서의 회고 3-5주차"
