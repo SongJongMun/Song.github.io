@@ -1,0 +1,18 @@
+# blog page sections
+- name: Blog
+  href: '/blog/'
+
+- name : Study
+  href: '/study/'
+  
+- name: Spring
+  href: '/spring/'
+
+- name: Retrospection
+  href: '/retrospection/'
+  
+- name: HTML
+  href: '/html/'
+
+- name: Database
+  href: '/database/'

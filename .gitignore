@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 *.gem
 .bundle
 .sass-cache
 node_modules
 Gemfile.lock
 public
+=======
+_site
+.sass-cache
+.jekyll-metadata
+.idea
+.DS_Store
+
+>>>>>>> a4f89d881d051eeb194c8319f90ee43497aebee1

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
@@ -55,3 +56,62 @@ languages: ["en"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css"]
 parallel_localization: false
+=======
+# Welcome to Jekyll!
+
+# Website settings
+title: "SongSong"
+description: "Song's blog,use Jekyll and github pages."
+keywords: "SJM,blog,Jekyll,github,gh-pages"
+baseurl: "/"
+url: "http://songjongmun.github.io"
+# url: "http://127.0.0.1:4000"
+
+# author
+author:
+  name: 'Jong Mun, Song'
+  first_name: 'Song'
+  last_name: 'JongMun'
+  email: 'skuugioge@daum.net'
+  facebook_username: 'powerioge'
+  github_username: 'SongJongMun'
+  avatar: 'static/img/landing/profile.JPG'
+  desc: 'NHN Entertainment. Rookie-Luna TF'
+
+# comment
+changyan:
+  # appid: cysfY7ULn
+  # conf: prod_861928934cecb7a18e15bedaed9dae29
+
+disqus_shortname: 'songjongmun-github-io'
+  
+disqus:
+  name: SongJongMun
+  public_key: 4fMpsqTLrp1omP0vphMxBSM7kn9csLrmugJYkoreT12jZQ8ddVNxPYI3iRuZ9utr
+
+# share
+bshare:
+  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
+
+# baidu analytics
+ba:
+  # uuid: 317acca9ef9255b934e46371e471431d
+
+# google analytics
+ga:
+  id: UA-73784599-1
+
+# growingIO
+gio:
+  id: a49d4901c7853da9
+
+# Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+>>>>>>> a4f89d881d051eeb194c8319f90ee43497aebee1

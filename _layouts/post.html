@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 layout: post
 ---
 <!DOCTYPE html>
@@ -25,3 +26,87 @@ layout: post
   </body>
   {% include footer.html %}
 </html>
+=======
+layout: default
+comments: true
+---
+ <div id="fb-root"></div>
+ 
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.8&appId=1253938667992778";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	{% for category in page.categories %}
+                        	<button class="btn btn-white btn-xs" type="button">{{ category }}</button>
+                        {% endfor %}
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }}</span>
+                        <h1>
+                            {{ page.title }}
+                        </h1>
+                    </div>
+                    	{{ content }}
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+							<div id="disqus_thread"></div>
+							
+							<script>
+								var surl = {{ site.url }}{{ page.url }};
+								
+								var disqus_config = function () {
+									this.page.url = "http://" + surl;  // Replace PAGE_URL with your page's canonical URL variable
+									this.page.identifier = {{ post.url }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+								};
+								
+								(function() { // DON'T EDIT BELOW THIS LINE
+									var d = document, s = d.createElement('script');
+									s.src = '//songjongmun-github-io.disqus.com/embed.js';
+									s.setAttribute('data-timestamp', +new Date());
+									(d.head || d.body).appendChild(s);
+								})();										
+							</script>
+							
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						
+							<h5 style="display: inline;">Tags:</h5>
+							{% for tag in page.tags %}
+								<button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
+							{% endfor %}
+                        </div>
+						
+						<div class="col-md-6">
+							<div class="fb-like" data-href="{{ site.url }}{{ post.url }}" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+							<div class="fb-comments" data-href="{{ site.url }}{{ post.url }}" data-width="developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
+						</div>
+						
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div>
+                                {% if site.disqus %}
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
+                                {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+>>>>>>> a4f89d881d051eeb194c8319f90ee43497aebee1
