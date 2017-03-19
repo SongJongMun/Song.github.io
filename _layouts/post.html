@@ -1,27 +1,25 @@
 ---
-layout: post
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include navigation.html %}
-    <div class="application">
-      {% include global.html %}
-      {% include search.html %}
-      {% include header.html %}
-      <section class="wrapper post">
-        {{content}}
-        {% if page.comments %}
-          {% include comment.html %}
-        {% endif %}
-      </section>
-    </div>
-  {% if page.comments %}
-  <script id="dsq-count-scr" src="//philsensus.disqus.com/count.js" async></script>
-  {% endif %}
-  </body>
-  {% include footer.html %}
-</html>
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
