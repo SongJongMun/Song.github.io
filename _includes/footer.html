@@ -1,15 +1,25 @@
-            <div class="custom-footer" style="display: block;">
-            <div class="footer-social-icons">
-            <ul class="social-icons">
-            {% for social_item in site.data.socialmedia %}
-              {% if social_item.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = site.url %}
-            {% endif %}
-            <li><a href="{{ domain }}{{ social_item.url }}" rel="me" {% if social_item.url contains 'http' %} target="_blank" {% endif %} class="social-icons" title="{{ social_item.title }}"> <i class="{{ social_item.class }} fa-2x"></i></a></li>
-            {% endfor %}          
-            </ul>
-            </div>
-            <h6 class="text-footer"><a rel="license" href="{{ site.url }}/disclosure/" title="CC BY-NC-SA 4.0 License, link to site disclosure" class="social-icon"><i class="fa fa-creative-commons"></i></a> <a rel="license" href="{{ site.url }}/disclosure/" title="CC BY-NC-SA 4.0 License, link to site disclosure">2015-{{ site.time | date: '%Y' }}</a>: <a href="{{ site.url }}" title="Home">example.com</a> | <a href="{{ site.url }}/about/" rel="me">About</a></h6>
-            </div>
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <a class="anchor" href="#top">{% svgicon chevron-top %}</a>
+      </div>
+      <div class="footer-col footer-col-2">
+        <p>2017 @ Powered by Github Pages and Jekyll {% svgicon jekyll %}, licensed under MIT License.</p>
+      </div>
+      <div class="footer-col footer-col-3">
+        <a class="footer-link-linkedin" href="http://linkedin.com/in/{{site.linkedin_username}}">
+          {% svgicon linkedin %}
+        </a>
+        <a class="footer-link-github" href="http://github.com/{{site.github_username}}">
+          {% svgicon github %}
+        </a>
+        <a class="footer-link-youtube" href="http://youtube.com/{{site.youtube_username}}">
+          {% svgicon youtube %}
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
