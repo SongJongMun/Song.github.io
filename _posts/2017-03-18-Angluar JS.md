@@ -6,7 +6,6 @@ tags: [js, angular]
 description: 앵귤러 JS 개요
 ---
 
-
 # Angular JS
 
 AngularJS 는 2009년 Miško Hevery과 Adam Abrons에 의해 개발된 MVC(또는 MVW – Model View Whatever) 웹 프레임워크로, SPA(Single Page Application) 형태의 웹 애플리케이션을 빠르게 개발할 수 있도록 도와줍니다.
@@ -28,6 +27,28 @@ AngularJS는 $watch 명령어를 이용하여 모델과 뷰를 실시간으로 �
 3. 코드 패턴이 동일해 개인간 차이에 따른 결과물의 차이가 적다. 코드량이 감소한다.
 4. SPA 개발에 최적화되어 있다.
 5. 기능적인 분리가 명확해 협업이 쉽다.
+
+# JQuery Dynamic - Angluar JS 뭐가 다르지?
+
+Jquery를 이용한 동적인 DOM, 내부 변경 시에는 양방향 데이터 바인딩이 적용되지 않는다.(다음 소스코드 참조)
+
+반면 AngularJS에서는 모델값이 변경되면 자동으로 $apply() -> $digest loop(앞선 그림에서 봤듯이, $digest loop는 $watch list를 계속 루프를 돌면서 $watch를 통해 모델의 변경을 체크하고 변경된 경우 뷰를 업데이트한다.)가 호출되어 모델의 변경을 확인 후 뷰를 업데이트하지만 angular context 외부에서 변경(아의 예제 : jQuery를 이용한 click이벤트 바인딩)이 되었을 경우 직접 $apply()를 호출해야 한다.
+
+```javascript
+function MainCtrl( $scope )  
+{
+    $scope.text = "";
+    $scope.btnClick = function()
+    {
+        $scope.text = "Hi AngularJS"; //변경 내용이 화면에 나타남
+    }
+
+    $( "#btn2" ).click( function()
+    {
+        $scope.text = "Hi jQuery"; //변경 내용이 화면에 나타나지 않음
+    });
+}
+```
 
 # Angluar JS의 MVC 구조??
 

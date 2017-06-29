@@ -17,6 +17,7 @@ description: Spring-Boot에서 WebSocket 쓰기
 원인 : WebSocket 소스코드를 무분별하게 사용한 것이 원인
 
 문제의 소스코드
+
 ``` java
 @Configuration
 @EnableWebSocket
@@ -35,3 +36,4 @@ public class ControllerConfiguration extends WebMvcConfigurerAdapter implements 
 
 Annotation 부분의
 @EnableWebMvc 부분이 문제가 되었다. 이 부분을 제거하니 정상적으로 jsp 페이지가 반환되었다.
+
