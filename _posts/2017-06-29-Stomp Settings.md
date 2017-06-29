@@ -8,6 +8,7 @@ description: Stomp Setting with Spring Boot
 
 # Initialize
 
+
 ```java
 @Configuration
 @AllArgsConstructor
@@ -55,6 +56,9 @@ public Object requestChartData(@DestinationVariable String databsae, @Destinatio
 }
 ```
 # Using(Client)
+
+맨 처음 SockJS 연결은 EndPoint로 진행해야 한다.
+귿 다음 Stomp의 연결은 Server에서 지정한 Path로 진행한다.
 
 ```javascript
 
