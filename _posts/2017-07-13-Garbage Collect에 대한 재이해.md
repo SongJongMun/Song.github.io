@@ -197,7 +197,7 @@ Major GC는 다음과 같이 수행된다.
 1. 초기표시(Stop-the-world) : Old 영역의 객체들에서 Survivor영역 객체들을 참고하고 있는 객체들 표시
 2. 기본 구역 스캔 : Old 영역 참조를 가지는 Survivor영역 탐색, Young GC 이전에 수행 됨.
 3. 컨커런트 표시 : 전체 Heap 영역에 Reachable / Live 객체를 탐색, Young GC 수행시 Stop.
-4. 재표시(Stop-the-world) : Heap에 살아있는 객체들의 표시 작업을 완료,
+4. 재표시(Stop-the-world) : Heap에 살아있는 객체들의 표시 작업을 완료하는 단계.
 5. 청소(Stop-the-world) : 살아있는 객체와 비어있는 구역을 식별하여, 필요없는 개체들을 지우고 비어있는 구역 초기화
 6. 복사(Stop-the-world) : 살아있는 객체들을 비어있는 구역으로 모은다.
 
