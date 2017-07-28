@@ -202,7 +202,6 @@ Major GC는 다음과 같이 수행된다.
 6. 복사(Stop-the-world) : 살아있는 객체들을 비어있는 구역으로 모은다.
 
 
-
 ## 참고 자료
 
 [http://hoonmaro.tistory.com/19](http://hoonmaro.tistory.com/19)
