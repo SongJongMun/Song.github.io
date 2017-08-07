@@ -8,7 +8,7 @@ markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
 title: dbyll
-encoding: UTF-8
+encoding: utf-8
 
 defaults:
   -
